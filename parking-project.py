@@ -16,7 +16,7 @@ class ParkingGarage:
             if amount.upper() == "Y":
                 num = input("Please enter your ticket number: ")
                 print("You have payed for your ticket. You have 15 minutes to exit the garage.")
-                self.current_ticket[int(num)] = True
+                self.current_ticket[int(num)] = True #marking as paid in current dict
                 self.leaveGarage() #do we need to do  something about the 15 minute thing? Shoulditnot  go immediately to leavegarage()?
                 active = False
             else:
